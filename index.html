@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#103e83">
+  <meta name="description" content="Zi Yang is a PhD student at the University of Hong Kong studying Gaussian processes, kernel learning, and their applications to large language models.">
+  <title>Zi Yang 杨子 · The University of Hong Kong</title>
+  <link rel="canonical" href="https://ziyang18.github.io/">
+  <link rel="alternate" hreflang="en" href="https://ziyang18.github.io/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://ziyang18.github.io/zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://ziyang18.github.io/">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <script src="assets/kernel-demo.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#about">Skip to main content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="#top" aria-label="Zi Yang, back to top">
+        <span class="monogram" aria-hidden="true">zy</span>
+        <span>Zi Yang</span>
+      </a>
+      <div class="masthead-actions">
+        <nav class="navigation" aria-label="Sections">
+          <a href="#about" aria-current="location">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Education</a>
+        </nav>
+        <a class="language-switch" href="zh.html" hreflang="zh-Hans" lang="zh-Hans" aria-label="Switch to Chinese">中文</a>
+      </div>
+    </div>
+  </header>
+  <div class="shell layout">
+    <aside class="profile" aria-label="Profile and contact information">
+      <div class="profile-cover" aria-hidden="true"></div>
+      <div class="portrait"><img src="assets/zi-yang.jpg" alt="Portrait of Zi Yang" width="486" height="680"></div>
+      <div class="identity">
+        <h1>Zi Yang <span lang="zh-Hans">杨子</span></h1>
+        <p class="role">PhD student</p>
+        <p class="affiliation">School of Computing and Data Science<br>The University of Hong Kong</p>
+        <p class="location"><img src="assets/icons/map-pin.svg" width="15" height="15" alt="">Hong Kong</p>
+      </div>
+      <div class="profile-links">
+        <a class="email" href="mailto:ziyang2023@connect.hku.hk"><img src="assets/icons/mail.svg" width="15" height="15" alt="">ziyang2023@connect.hku.hk</a>
+        <ul class="profiles" aria-label="Academic and professional profiles">
+          <li><a href="https://scholar.google.com/citations?user=_MBYk0YAAAAJ&amp;hl=en"><img src="assets/icons/graduation-cap.svg" width="16" height="16" alt="">Google Scholar <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://orcid.org/0009-0009-1295-5190"><img src="assets/icons/badge.svg" width="16" height="16" alt="">ORCID <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://openreview.net/profile?id=~Zi_Yang8"><img src="assets/icons/book-open.svg" width="16" height="16" alt="">OpenReview <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/ziyang18"><img src="assets/icons/code-xml.svg" width="16" height="16" alt="">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/ziyang-209978317/"><img src="assets/icons/briefcase-business.svg" width="16" height="16" alt="">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <section class="intro" id="about" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading"><span class="section-icon" aria-hidden="true">👋</span>About me</h2></div>
+        <p class="bio">Hi, I’m <strong>Zi Yang</strong>, a PhD student at <a href="https://www.cds.hku.hk/">the University of Hong Kong</a>, advised by <a href="https://michaelzhang01.github.io/">Prof. Michael Minyi Zhang</a>. I study Gaussian processes and kernel learning, with a particular interest in applying these methods to large language models.</p>
+
+        <h3 class="interests-heading">Research interests</h3>
+        <ul class="topics" aria-label="Research interests, each linked to a related paper">
+          <li><a href="#cdgp">Gaussian processes</a></li>
+          <li><a href="#mo-lrn">Nonstationary kernels</a></li>
+          <li><a href="#gplvm">Multi-view learning</a></li>
+          <li><a href="#fska">Attention mechanisms</a></li>
+          <li><a href="#cdgp">Bayesian nonparametrics</a></li>
+        </ul>
+
+        <figure class="research-figure" data-kernel-demo>
+          <figcaption>
+            <h3>Gaussian process regression</h3>
+            <p>The shaded band shows how uncertain the model is between observations.</p>
+            <button data-kernel-toggle type="button" hidden>Add an observation</button>
+            <span data-kernel-status class="sr-only" aria-live="polite" aria-atomic="true"></span>
+          </figcaption>
+          <div class="figure-body">
+            <div class="figure-plot">
+              <img data-kernel-fallback src="assets/gp-posterior.png" alt="Example Gaussian process posterior with a wider credible band in the gap between observations." width="1200" height="500">
+              <canvas data-kernel-plot hidden role="img" width="1000" height="400" aria-label="Gaussian process posterior with eight example observations. The 95% credible band widens in the data gap."></canvas>
+            </div>
+            <div class="legend"><span><i class="line-key"></i>Mean</span><span><i class="band-key"></i>95% credible band</span><span><i class="dot-key"></i>Observation</span></div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section-block" id="news" aria-labelledby="news-heading">
+        <div class="section-heading"><h2 id="news-heading"><span class="section-icon" aria-hidden="true">📣</span>News</h2></div>
+        <ul class="news-list">
+          <li><time datetime="2026-11">Nov 2026</time><p>Our paper <a href="#d2po">D²PO</a> appeared in the ACM Multimedia proceedings.</p></li>
+          <li><time datetime="2026-10">Oct 2026</time><p>Our NeurIPS papers on <a href="#fska">spectral kernel attention</a> and <a href="#cdgp">continuous-depth Gaussian processes</a> are available on arXiv.</p></li>
+          <li><time datetime="2026-04">Apr 2026</time><p>Our <a href="#mo-lrn">multi-output Gaussian process paper</a> was part of the ICLR poster program.</p></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading"><span class="section-icon" aria-hidden="true">📚</span>Selected publications</h2><a class="section-link" href="https://scholar.google.com/citations?user=_MBYk0YAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div>
+        <p class="contribution"><span aria-hidden="true">*</span> Equal contribution</p>
+        <details class="paper-year" open>
+          <summary>2026 <span>4 papers</span></summary>
+          <div class="papers">
+          <article id="fska" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2026</p>
+              <h3><a href="https://arxiv.org/abs/2610.30465">Flow-based Spectral Kernel Learning for Nonstationary Attention</a></h3>
+              <p class="authors"><strong>Zi Yang*</strong>, Ying Li*, Alejandro Lancho, Darío C. Larese, Pablo M. Olmos, Michael Minyi Zhang</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.30465">Paper</a><a href="https://github.com/ziyang18/FSKA">Code</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.30465v1#S3.F1" aria-label="Spectral density learned by a normalizing flow, Yang et al. · Fig. 1, open source figure">
+              <img src="assets/papers/fska.png" alt="Spectral density learned by a normalizing flow" width="122" height="77" loading="lazy">
+              <span>Yang et al. · Fig. 1 ↗</span>
+            </a>
+          </article>
+          <article id="cdgp" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2026</p>
+              <h3><a href="https://arxiv.org/abs/2610.30890">Continuous-depth Deep Gaussian Processes</a></h3>
+              <p class="authors">Ying Li, Sanyou Wu, <strong>Zi Yang</strong>, Qiaochu Xu, Yuhao Liu, Zhidi Lin, Michael Minyi Zhang, Petar Djurić, Alexandre H. Thiéry</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.30890">Paper</a><a href="https://openreview.net/forum?id=lD5IXHqE11">OpenReview</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.30890v1#A6.F3" aria-label="Latent trajectories sampled from FlowDGP, Li et al. · Fig. 3d, open source figure">
+              <img src="assets/papers/flow-dgp.png" alt="Latent trajectories sampled from FlowDGP" width="122" height="77" loading="lazy">
+              <span>Li et al. · Fig. 3d ↗</span>
+            </a>
+          </article>
+          <article id="d2po" class="paper">
+            <div class="paper-monogram" aria-hidden="true"><span>D²PO</span></div>
+            <div class="paper-body">
+              <p class="venue">ACM Multimedia 2026</p>
+              <h3><a href="https://doi.org/10.1145/3767308.3834972">D²PO: Dual-Direction Preference Optimization via Adaptive Distribution Alignment for Vision-Language Models</a></h3>
+              <p class="authors">Jing Liang, Rui Wang, Qin Yang, Yuan Tang, Tao Guan, <strong>Zi Yang</strong>, Kaiyan Zhang</p>
+              <p class="paper-links"><a href="https://doi.org/10.1145/3767308.3834972">Paper</a><a href="https://openreview.net/forum?id=dvkavVNOj9">OpenReview</a></p>
+            </div>
+          </article>
+          <article id="mo-lrn" class="paper">
+            <div class="paper-body">
+              <p class="venue">ICLR 2026</p>
+              <h3><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/9e5f7743a4e753452f73d32da1190202-Abstract-Conference.html">Revisiting Nonstationary Kernel Design for Multi-Output Gaussian Processes</a></h3>
+              <p class="authors">Qiaochu Xu*, <strong>Zi Yang*</strong>, Ying Li, Michael Minyi Zhang, Pablo M. Olmos</p>
+              <p class="paper-links"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/9e5f7743a4e753452f73d32da1190202-Abstract-Conference.html">Paper</a><a href="https://github.com/KrnteXu/MO-LRN">Code</a></p>
+            </div>
+            <a class="paper-figure" href="https://proceedings.iclr.cc/paper_files/paper/2026/file/9e5f7743a4e753452f73d32da1190202-Paper-Conference.pdf#page=9" aria-label="Ozone imputation on an air quality dataset, Xu et al. · Fig. 4, open source figure">
+              <img src="assets/papers/mo-lrn.png" alt="Ozone imputation on an air quality dataset" width="122" height="77" loading="lazy">
+              <span>Xu et al. · Fig. 4 ↗</span>
+            </a>
+          </article>
+          </div>
+        </details>
+        <details class="paper-year" open>
+          <summary>2025 <span>1 paper</span></summary>
+          <div class="papers">
+          <article id="gplvm" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2025</p>
+              <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/5e50b663324972bb8cc7b5c06a059438-Abstract-Conference.html">Multi-View Oriented GPLVM: Expressiveness and Efficiency</a></h3>
+              <p class="authors"><strong>Zi Yang*</strong>, Ying Li*, Zhidi Lin, Michael Minyi Zhang, Pablo M. Olmos</p>
+              <p class="paper-links"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/5e50b663324972bb8cc7b5c06a059438-Abstract-Conference.html">Paper</a><a href="https://github.com/ziyang18/NG-MVLVM">Code</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2502.08253v2#S4.F3" aria-label="Learned latent variables and a kernel matrix for one view, Yang et al. · Fig. 2, open source figure">
+              <img src="assets/papers/multi-view.png" alt="Learned latent variables and a kernel matrix for one view" width="122" height="77" loading="lazy">
+              <span>Yang et al. · Fig. 2 ↗</span>
+            </a>
+          </article>
+          </div>
+        </details>
+
+        <section class="submitted-manuscripts" id="submitted" aria-labelledby="submitted-heading">
+          <div class="section-heading"><h3 id="submitted-heading"><span class="section-icon" aria-hidden="true">📝</span>Submitted manuscripts</h3></div>
+          <p class="contribution"><span aria-hidden="true">*</span> Equal contribution</p>
+          <article id="rff-gpa" class="paper">
+            <div class="paper-monogram" aria-hidden="true"><span>RFF-GPA</span></div>
+            <div class="paper-body">
+              <p class="venue">arXiv preprint · Oct 2026</p>
+              <h3><a href="https://arxiv.org/abs/2610.08578" lang="en">Random Feature Gaussian Process Attention: Linear-Time Probabilistic Attention with Calibrated Uncertainty</a></h3>
+              <p class="authors">Amir Mohammad Mahfoozi*, <strong>Zi Yang*</strong>, Ying Li, Michael Minyi Zhang</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.08578">arXiv</a><a href="https://arxiv.org/pdf/2610.08578">PDF</a></p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="section-block" id="education" aria-labelledby="education-heading">
+        <div class="section-heading"><h2 id="education-heading"><span class="section-icon" aria-hidden="true">🎓</span>Education</h2></div>
+        <ol class="education-list">
+          <li><span class="degree">PhD</span><h3>The University of Hong Kong</h3><p>PhD student, School of Computing and Data Science</p><span class="degree-date">Jan 2024 – present</span></li>
+          <li><span class="degree">MSc</span><h3>University College London</h3><p>Statistics · Distinction</p><span class="degree-date">2023</span></li>
+          <li><span class="degree">BSc</span><h3>University of Liverpool</h3><p>Mathematics (Hons) · First Class</p><span class="degree-date">2022</span></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <footer class="shell page-footer"><span>© 2026 Zi Yang</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

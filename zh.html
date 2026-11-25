@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#103e83">
+  <meta name="description" content="杨子，香港大学计算与数据科学学院博士研究生，研究高斯过程、核学习及其在大语言模型中的应用。">
+  <title>杨子 Zi Yang · 香港大学</title>
+  <link rel="canonical" href="https://ziyang18.github.io/zh.html">
+  <link rel="alternate" hreflang="en" href="https://ziyang18.github.io/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://ziyang18.github.io/zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://ziyang18.github.io/">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <script src="assets/kernel-demo.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#about">跳至正文</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="#top" aria-label="杨子，返回页首">
+        <span class="monogram" aria-hidden="true">zy</span>
+        <span>杨子</span>
+      </a>
+      <div class="masthead-actions">
+        <nav class="navigation" aria-label="栏目导航">
+          <a href="#about" aria-current="location">关于我</a>
+          <a href="#news">近况</a>
+          <a href="#publications">论文</a>
+          <a href="#education">教育经历</a>
+        </nav>
+        <a class="language-switch" href="index.html" lang="en" hreflang="en" aria-label="切换为英文">English</a>
+      </div>
+    </div>
+  </header>
+  <div class="shell layout">
+    <aside class="profile" aria-label="个人资料与联系方式">
+      <div class="profile-cover" aria-hidden="true"></div>
+      <div class="portrait"><img src="assets/zi-yang.jpg" alt="杨子的照片" width="486" height="680"></div>
+      <div class="identity">
+        <h1>杨子 <span lang="en">Zi Yang</span></h1>
+        <p class="role">博士研究生</p>
+        <p class="affiliation">香港大学<br>计算与数据科学学院</p>
+        <p class="location"><img src="assets/icons/map-pin.svg" width="15" height="15" alt="">香港</p>
+      </div>
+      <div class="profile-links">
+        <a class="email" href="mailto:ziyang2023@connect.hku.hk"><img src="assets/icons/mail.svg" width="15" height="15" alt="">ziyang2023@connect.hku.hk</a>
+        <ul class="profiles" aria-label="学术主页与职业档案">
+          <li><a href="https://scholar.google.com/citations?user=_MBYk0YAAAAJ&amp;hl=zh-CN"><img src="assets/icons/graduation-cap.svg" width="16" height="16" alt="">谷歌学术 <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://orcid.org/0009-0009-1295-5190"><img src="assets/icons/badge.svg" width="16" height="16" alt="">ORCID <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://openreview.net/profile?id=~Zi_Yang8"><img src="assets/icons/book-open.svg" width="16" height="16" alt="">OpenReview <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/ziyang18"><img src="assets/icons/code-xml.svg" width="16" height="16" alt="">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/ziyang-209978317/"><img src="assets/icons/briefcase-business.svg" width="16" height="16" alt="">领英 <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <section class="intro" id="about" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading"><span class="section-icon" aria-hidden="true">👋</span>关于我</h2></div>
+        <p class="bio">大家好，我是<strong>杨子</strong>，在<a href="https://www.cds.hku.hk/">香港大学计算与数据科学学院</a>攻读博士学位，导师是 <a href="https://michaelzhang01.github.io/">Michael Minyi Zhang 教授</a>。我研究高斯过程与核学习，尤其关注如何将这些方法应用于大语言模型。</p>
+
+        <h3 class="interests-heading">研究方向</h3>
+        <ul class="topics" aria-label="研究方向，点击可跳至相关论文">
+          <li><a href="#cdgp">高斯过程</a></li>
+          <li><a href="#mo-lrn">非平稳核</a></li>
+          <li><a href="#gplvm">多视图学习</a></li>
+          <li><a href="#fska">注意力机制</a></li>
+          <li><a href="#cdgp">贝叶斯非参数方法</a></li>
+        </ul>
+
+        <figure class="research-figure" data-kernel-demo>
+          <figcaption>
+            <h3>高斯过程回归</h3>
+            <p>阴影表示模型预测的 95% 可信带。试着添加一个观测点，看看它附近的可信带如何变化。</p>
+            <button data-kernel-toggle type="button" hidden>添加观测点</button>
+            <span data-kernel-status class="sr-only" aria-live="polite" aria-atomic="true"></span>
+          </figcaption>
+          <div class="figure-body">
+            <div class="figure-plot">
+              <img data-kernel-fallback src="assets/gp-posterior.png" alt="高斯过程回归示意图。远离观测点时，后验预测的可信带变宽。" width="1200" height="500">
+              <canvas data-kernel-plot hidden role="img" width="1000" height="400" aria-label="根据八个示例观测点得到的高斯过程后验分布。在缺少观测的区域，95% 可信带变宽。"></canvas>
+            </div>
+            <div class="legend"><span><i class="line-key"></i>后验均值</span><span><i class="band-key"></i>95% 可信带</span><span><i class="dot-key"></i>观测点</span></div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section-block" id="news" aria-labelledby="news-heading">
+        <div class="section-heading"><h2 id="news-heading"><span class="section-icon" aria-hidden="true">📣</span>近况</h2></div>
+        <ul class="news-list">
+          <li><time datetime="2026-11">2026 年 11 月</time><p>我们的论文 <a href="#d2po">D²PO</a> 已收入 ACM Multimedia 2026 论文集。</p></li>
+          <li><time datetime="2026-10">2026 年 10 月</time><p>我们的两篇 NeurIPS 论文已在 arXiv 上公开，分别研究<a href="#fska">谱核注意力机制</a>和<a href="#cdgp">连续深度高斯过程</a>。</p></li>
+          <li><time datetime="2026-04">2026 年 4 月</time><p>我们关于<a href="#mo-lrn">多输出高斯过程</a>的论文入选 ICLR 2026 海报展示。</p></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading"><span class="section-icon" aria-hidden="true">📚</span>代表论文</h2><a class="section-link" href="https://scholar.google.com/citations?user=_MBYk0YAAAAJ&amp;hl=zh-CN">谷歌学术 <span aria-hidden="true">↗</span></a></div>
+        <p class="contribution"><span aria-hidden="true">*</span> 表示同等贡献</p>
+        <details class="paper-year" open>
+          <summary>2026 <span>4 篇论文</span></summary>
+          <div class="papers">
+          <article id="fska" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2026</p>
+              <h3 lang="en"><a href="https://arxiv.org/abs/2610.30465">Flow-based Spectral Kernel Learning for Nonstationary Attention</a></h3>
+              <p class="authors" lang="en"><strong>Zi Yang*</strong>, Ying Li*, Alejandro Lancho, Darío C. Larese, Pablo M. Olmos, Michael Minyi Zhang</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.30465">论文</a><a href="https://github.com/ziyang18/FSKA">代码</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.30465v1#S3.F1" aria-label="归一化流学到的谱密度，Yang 等，图 1，查看论文原图">
+              <img src="assets/papers/fska.png" alt="归一化流学到的谱密度" width="122" height="77" loading="lazy">
+              <span>Yang 等，图 1 ↗</span>
+            </a>
+          </article>
+          <article id="cdgp" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2026</p>
+              <h3 lang="en"><a href="https://arxiv.org/abs/2610.30890">Continuous-depth Deep Gaussian Processes</a></h3>
+              <p class="authors" lang="en">Ying Li, Sanyou Wu, <strong>Zi Yang</strong>, Qiaochu Xu, Yuhao Liu, Zhidi Lin, Michael Minyi Zhang, Petar Djurić, Alexandre H. Thiéry</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.30890">论文</a><a href="https://openreview.net/forum?id=lD5IXHqE11">OpenReview 评审</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.30890v1#A6.F3" aria-label="从 FlowDGP 采样得到的潜在轨迹，Li 等，图 3(d)，查看论文原图">
+              <img src="assets/papers/flow-dgp.png" alt="从 FlowDGP 采样得到的潜在轨迹" width="122" height="77" loading="lazy">
+              <span>Li 等，图 3(d) ↗</span>
+            </a>
+          </article>
+          <article id="d2po" class="paper">
+            <div class="paper-monogram" aria-hidden="true"><span>D²PO</span></div>
+            <div class="paper-body">
+              <p class="venue">ACM Multimedia 2026</p>
+              <h3 lang="en"><a href="https://doi.org/10.1145/3767308.3834972">D²PO: Dual-Direction Preference Optimization via Adaptive Distribution Alignment for Vision-Language Models</a></h3>
+              <p class="authors" lang="en">Jing Liang, Rui Wang, Qin Yang, Yuan Tang, Tao Guan, <strong>Zi Yang</strong>, Kaiyan Zhang</p>
+              <p class="paper-links"><a href="https://doi.org/10.1145/3767308.3834972">论文</a><a href="https://openreview.net/forum?id=dvkavVNOj9">OpenReview 评审</a></p>
+            </div>
+          </article>
+          <article id="mo-lrn" class="paper">
+            <div class="paper-body">
+              <p class="venue">ICLR 2026</p>
+              <h3 lang="en"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/9e5f7743a4e753452f73d32da1190202-Abstract-Conference.html">Revisiting Nonstationary Kernel Design for Multi-Output Gaussian Processes</a></h3>
+              <p class="authors" lang="en">Qiaochu Xu*, <strong>Zi Yang*</strong>, Ying Li, Michael Minyi Zhang, Pablo M. Olmos</p>
+              <p class="paper-links"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/9e5f7743a4e753452f73d32da1190202-Abstract-Conference.html">论文</a><a href="https://github.com/KrnteXu/MO-LRN">代码</a></p>
+            </div>
+            <a class="paper-figure" href="https://proceedings.iclr.cc/paper_files/paper/2026/file/9e5f7743a4e753452f73d32da1190202-Paper-Conference.pdf#page=9" aria-label="空气质量数据集中臭氧缺失值的插补结果，Xu 等，图 4，查看论文原图">
+              <img src="assets/papers/mo-lrn.png" alt="空气质量数据集中臭氧缺失值的插补结果" width="122" height="77" loading="lazy">
+              <span>Xu 等，图 4 ↗</span>
+            </a>
+          </article>
+          </div>
+        </details>
+        <details class="paper-year" open>
+          <summary>2025 <span>1 篇论文</span></summary>
+          <div class="papers">
+          <article id="gplvm" class="paper">
+            <div class="paper-body">
+              <p class="venue">NeurIPS 2025</p>
+              <h3 lang="en"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/5e50b663324972bb8cc7b5c06a059438-Abstract-Conference.html">Multi-View Oriented GPLVM: Expressiveness and Efficiency</a></h3>
+              <p class="authors" lang="en"><strong>Zi Yang*</strong>, Ying Li*, Zhidi Lin, Michael Minyi Zhang, Pablo M. Olmos</p>
+              <p class="paper-links"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/5e50b663324972bb8cc7b5c06a059438-Abstract-Conference.html">论文</a><a href="https://github.com/ziyang18/NG-MVLVM">代码</a></p>
+            </div>
+            <a class="paper-figure" href="https://arxiv.org/html/2502.08253v2#S4.F3" aria-label="模型学到的潜变量与其中一个视图的核矩阵，Yang 等，图 2，查看论文原图">
+              <img src="assets/papers/multi-view.png" alt="模型学到的潜变量与其中一个视图的核矩阵" width="122" height="77" loading="lazy">
+              <span>Yang 等，图 2 ↗</span>
+            </a>
+          </article>
+          </div>
+        </details>
+
+        <section class="submitted-manuscripts" id="submitted" aria-labelledby="submitted-heading">
+          <div class="section-heading"><h3 id="submitted-heading"><span class="section-icon" aria-hidden="true">📝</span>在投论文</h3></div>
+          <p class="contribution"><span aria-hidden="true">*</span> 表示共同第一作者</p>
+          <article id="rff-gpa" class="paper">
+            <div class="paper-monogram" aria-hidden="true"><span>RFF-GPA</span></div>
+            <div class="paper-body">
+              <p class="venue">arXiv 预印本 · 2026 年 10 月</p>
+              <h3><a href="https://arxiv.org/abs/2610.08578" lang="en">Random Feature Gaussian Process Attention: Linear-Time Probabilistic Attention with Calibrated Uncertainty</a></h3>
+              <p class="authors">Amir Mohammad Mahfoozi*, <strong>Zi Yang*</strong>, Ying Li, Michael Minyi Zhang</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2610.08578">arXiv</a><a href="https://arxiv.org/pdf/2610.08578">全文 PDF</a></p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="section-block" id="education" aria-labelledby="education-heading">
+        <div class="section-heading"><h2 id="education-heading"><span class="section-icon" aria-hidden="true">🎓</span>教育经历</h2></div>
+        <ol class="education-list">
+          <li><span class="degree">博士</span><h3>香港大学</h3><p>计算与数据科学学院 · 在读</p><span class="degree-date">2024 年 1 月至今</span></li>
+          <li><span class="degree">硕士</span><h3>伦敦大学学院</h3><p>统计学理学硕士 · 优异成绩（Distinction）</p><span class="degree-date">2023 年</span></li>
+          <li><span class="degree">学士</span><h3>利物浦大学</h3><p>数学理学学士 · 一等荣誉学位</p><span class="degree-date">2022 年</span></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <footer class="shell page-footer"><span>© 2026 杨子</span><a href="#top">返回页首 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
