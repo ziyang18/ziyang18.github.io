@@ -114,7 +114,10 @@ window.addEventListener("resize", scheduleUpdate);
 window.addEventListener("load", updateNavigation);
 window.addEventListener("pageshow", revealLocation);
 window.addEventListener("popstate", revealLocation);
-window.addEventListener("hashchange", revealLocation);
+window.addEventListener("hashchange", () => {
+  revealLocation();
+  scheduleUpdate();
+});
 document.addEventListener("toggle", scheduleUpdate, true);
 revealLocation();
 updateNavigation();
