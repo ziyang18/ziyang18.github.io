@@ -12,7 +12,13 @@ function updateNavigation() {
     if (section.getBoundingClientRect().top <= threshold) active = section;
   }
   if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 3) {
-    active = sections[sections.length - 1];
+    // Short sections near the footer cannot always scroll to the top.
+    const target = document.getElementById(location.hash.slice(1));
+    const rect = target?.getBoundingClientRect();
+    const selected = rect?.bottom > masthead.offsetHeight && rect.top < window.innerHeight
+      ? sections.find(section => section.contains(target))
+      : null;
+    active = selected || sections[sections.length - 1];
   }
   for (const link of links) {
     if (link.hash === "#" + active.id) link.setAttribute("aria-current", "location");
@@ -113,3 +119,16 @@ document.addEventListener("toggle", scheduleUpdate, true);
 revealLocation();
 updateNavigation();
 animateEntries();
+
+const moreNav = document.querySelector(".more-nav");
+document.addEventListener("click", event => {
+  if (moreNav.open && (!moreNav.contains(event.target) || event.target.closest("a"))) {
+    moreNav.open = false;
+  }
+});
+moreNav.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    moreNav.open = false;
+    moreNav.querySelector("summary").focus();
+  }
+});

@@ -29,7 +29,15 @@
           <a href="#about" aria-current="location">关于我</a>
           <a href="#news">近况</a>
           <a href="#publications">论文</a>
-          <a href="#education">教育经历</a>
+          <details class="more-nav">
+            <summary>更多</summary>
+            <div class="more-links">
+              <a href="#education">教育经历</a>
+              <a href="#awards">荣誉与奖项</a>
+              <a href="#service">学术服务</a>
+              <a href="#beyond">研究之外</a>
+            </div>
+          </details>
         </nav>
         <a class="language-switch" href="index.html" lang="en" hreflang="en" aria-label="切换为英文">English</a>
       </div>
@@ -128,7 +136,10 @@
             </a>
           </article>
           <article id="d2po" class="paper">
-            <div class="paper-monogram" aria-hidden="true"><span>D²PO</span></div>
+            <a class="paper-figure" href="https://figures.semanticscholar.org/56127a9550c8dddba6dc9d9c1e523be91dec12a2/2-Figure1-1.png" aria-label="D²PO 在模型与偏好数据之间进行双向对齐。节选自 Liang 等的图 1(c)。">
+              <img src="assets/papers/d2po.webp" alt="D²PO 在模型与偏好数据之间进行双向对齐。节选自 Liang 等的图 1(c)。" width="122" height="77" loading="lazy">
+              <span>双向对齐 · 图 1(c) ↗</span>
+            </a>
             <div class="paper-body">
               <p class="venue">ACM Multimedia 2026</p>
               <h3 lang="en"><a href="https://doi.org/10.1145/3767308.3834972">D²PO: Dual-Direction Preference Optimization via Adaptive Distribution Alignment for Vision-Language Models</a></h3>
@@ -172,7 +183,10 @@
           <div class="section-heading"><h3 id="submitted-heading"><span class="section-icon" aria-hidden="true">📝</span>在投论文</h3></div>
           <p class="contribution"><span aria-hidden="true">*</span> 表示共同第一作者</p>
           <article id="rff-gpa" class="paper">
-            <div class="paper-monogram" aria-hidden="true"><span>RFF-GPA</span></div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.08578v1#S4.F3" aria-label="受扰动的鸟类图像及其逐 token 后验不确定性图。节选自 Mahfoozi 等的图 3。">
+              <img src="assets/papers/rff-gpa.webp" alt="受扰动的鸟类图像及其逐 token 后验不确定性图。节选自 Mahfoozi 等的图 3。" width="122" height="77" loading="lazy">
+              <span>逐 token 不确定性 · 图 3 ↗</span>
+            </a>
             <div class="paper-body">
               <p class="venue">arXiv 预印本 · 2026 年 10 月</p>
               <h3><a href="https://arxiv.org/abs/2610.08578" lang="en">Random Feature Gaussian Process Attention: Linear-Time Probabilistic Attention with Calibrated Uncertainty</a></h3>
@@ -187,9 +201,38 @@
         <div class="section-heading"><h2 id="education-heading"><span class="section-icon" aria-hidden="true">🎓</span>教育经历</h2></div>
         <ol class="education-list">
           <li><span class="degree">博士</span><h3>香港大学</h3><p>计算与数据科学学院 · 在读</p><span class="degree-date">2024 年 1 月至今</span></li>
-          <li><span class="degree">硕士</span><h3>伦敦大学学院</h3><p>统计学理学硕士 · 优异成绩（Distinction）</p><span class="degree-date">2023 年</span></li>
-          <li><span class="degree">学士</span><h3>利物浦大学</h3><p>数学理学学士 · 一等荣誉学位</p><span class="degree-date">2022 年</span></li>
+          <li><span class="degree">硕士</span><h3>伦敦大学学院</h3><p>统计学理学硕士 · Distinction</p><span class="degree-date">2022 年 9 月至 2023 年 9 月</span></li>
+          <li class="dual-degree">
+            <span class="degree">本科 · 2+2 双学位项目</span>
+            <div class="degree-stages">
+              <div><h3>西交利物浦大学</h3><p>数学与应用数学</p><span class="stage-date">2018 年 9 月至 2020 年 8 月</span></div>
+              <div><h3>英国利物浦大学</h3><p>数学理学学士 · 一等荣誉</p><span class="stage-date">2020 年 9 月至 2022 年 7 月</span></div>
+            </div>
+            <span class="degree-date">2018 年 9 月至 2022 年 7 月</span>
+          </li>
         </ol>
+      </section>
+
+      <section class="section-block" id="awards" aria-labelledby="awards-heading">
+        <div class="section-heading"><h2 id="awards-heading"><span class="section-icon" aria-hidden="true">🏅</span>荣誉与奖项</h2></div>
+        <ul class="award-list">
+          <li><span class="award-date">2024–2027</span><div><h3>研究生奖学金（Postgraduate Scholarship, PGS）</h3><p>香港大学 · 2023 年 12 月获授</p></div></li>
+          <li><span class="award-date">2021–2022</span><div><h3>JG Oldroyd Prize</h3><p>利物浦大学 · 表彰应用数学与理论物理考试中的优异表现</p></div></li>
+          <li><span class="award-date">2019–2020</span><div><h3>校级学业成就奖（University Academic Achievement Award）</h3><p>西交利物浦大学</p></div></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="service" aria-labelledby="service-heading">
+        <div class="section-heading"><h2 id="service-heading"><span class="section-icon" aria-hidden="true">🤝</span>学术服务</h2></div>
+        <dl class="service-list">
+          <div><dt>期刊审稿</dt><dd><a href="https://jmlr.org/tmlr/" lang="en">Transactions on Machine Learning Research (TMLR)</a><br><a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing" lang="en">IEEE Transactions on Signal Processing (TSP)</a></dd></div>
+          <div><dt>会议审稿</dt><dd lang="en">AAAI · ICML · NeurIPS · ICLR · AISTATS</dd></div>
+        </dl>
+      </section>
+
+      <section class="section-block" id="beyond" aria-labelledby="beyond-heading">
+        <div class="section-heading"><h2 id="beyond-heading"><span class="section-icon" aria-hidden="true">🌍</span>研究之外</h2></div>
+        <p class="life-note">我喜欢旅行，去不同的地方，看看当地人怎样生活。</p>
       </section>
     </main>
   </div>

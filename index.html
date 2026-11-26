@@ -29,7 +29,15 @@
           <a href="#about" aria-current="location">About</a>
           <a href="#news">News</a>
           <a href="#publications">Publications</a>
-          <a href="#education">Education</a>
+          <details class="more-nav">
+            <summary>More</summary>
+            <div class="more-links">
+              <a href="#education">Education</a>
+              <a href="#awards">Honors &amp; Awards</a>
+              <a href="#service">Academic Service</a>
+              <a href="#beyond">Beyond Research</a>
+            </div>
+          </details>
         </nav>
         <a class="language-switch" href="zh.html" hreflang="zh-Hans" lang="zh-Hans" aria-label="Switch to Chinese">中文</a>
       </div>
@@ -128,7 +136,10 @@
             </a>
           </article>
           <article id="d2po" class="paper">
-            <div class="paper-monogram" aria-hidden="true"><span>D²PO</span></div>
+            <a class="paper-figure" href="https://figures.semanticscholar.org/56127a9550c8dddba6dc9d9c1e523be91dec12a2/2-Figure1-1.png" aria-label="D²PO aligns the model and preference data in both directions. Crop of Liang et al., Figure 1(c).">
+              <img src="assets/papers/d2po.webp" alt="D²PO aligns the model and preference data in both directions. Crop of Liang et al., Figure 1(c)." width="122" height="77" loading="lazy">
+              <span>Model–data alignment · Fig. 1c ↗</span>
+            </a>
             <div class="paper-body">
               <p class="venue">ACM Multimedia 2026</p>
               <h3><a href="https://doi.org/10.1145/3767308.3834972">D²PO: Dual-Direction Preference Optimization via Adaptive Distribution Alignment for Vision-Language Models</a></h3>
@@ -172,7 +183,10 @@
           <div class="section-heading"><h3 id="submitted-heading"><span class="section-icon" aria-hidden="true">📝</span>Submitted manuscripts</h3></div>
           <p class="contribution"><span aria-hidden="true">*</span> Equal contribution</p>
           <article id="rff-gpa" class="paper">
-            <div class="paper-monogram" aria-hidden="true"><span>RFF-GPA</span></div>
+            <a class="paper-figure" href="https://arxiv.org/html/2610.08578v1#S4.F3" aria-label="A corrupted bird image alongside its token-wise posterior uncertainty map. Crop of Mahfoozi et al., Figure 3.">
+              <img src="assets/papers/rff-gpa.webp" alt="A corrupted bird image alongside its token-wise posterior uncertainty map. Crop of Mahfoozi et al., Figure 3." width="122" height="77" loading="lazy">
+              <span>Token uncertainty · Fig. 3 ↗</span>
+            </a>
             <div class="paper-body">
               <p class="venue">arXiv preprint · Oct 2026</p>
               <h3><a href="https://arxiv.org/abs/2610.08578" lang="en">Random Feature Gaussian Process Attention: Linear-Time Probabilistic Attention with Calibrated Uncertainty</a></h3>
@@ -187,9 +201,38 @@
         <div class="section-heading"><h2 id="education-heading"><span class="section-icon" aria-hidden="true">🎓</span>Education</h2></div>
         <ol class="education-list">
           <li><span class="degree">PhD</span><h3>The University of Hong Kong</h3><p>PhD student, School of Computing and Data Science</p><span class="degree-date">Jan 2024 – present</span></li>
-          <li><span class="degree">MSc</span><h3>University College London</h3><p>Statistics · Distinction</p><span class="degree-date">2023</span></li>
-          <li><span class="degree">BSc</span><h3>University of Liverpool</h3><p>Mathematics (Hons) · First Class</p><span class="degree-date">2022</span></li>
+          <li><span class="degree">MSc</span><h3>University College London</h3><p>MSc in Statistics · Distinction</p><span class="degree-date">Sep 2022 – Sep 2023</span></li>
+          <li class="dual-degree">
+            <span class="degree">Undergraduate · 2+2 dual-degree programme</span>
+            <div class="degree-stages">
+              <div><h3>Xi’an Jiaotong-Liverpool University</h3><p>Applied Mathematics</p><span class="stage-date">Sep 2018 – Aug 2020</span></div>
+              <div><h3>University of Liverpool</h3><p>BSc (Hons) in Mathematics · First Class</p><span class="stage-date">Sep 2020 – Jul 2022</span></div>
+            </div>
+            <span class="degree-date">Sep 2018 – Jul 2022</span>
+          </li>
         </ol>
+      </section>
+
+      <section class="section-block" id="awards" aria-labelledby="awards-heading">
+        <div class="section-heading"><h2 id="awards-heading"><span class="section-icon" aria-hidden="true">🏅</span>Honors &amp; Awards</h2></div>
+        <ul class="award-list">
+          <li><span class="award-date">2024–2027</span><div><h3>Postgraduate Scholarship (PGS)</h3><p>The University of Hong Kong · Awarded in December 2023</p></div></li>
+          <li><span class="award-date">2021–2022</span><div><h3>JG Oldroyd Prize</h3><p>University of Liverpool · For examination performance in applied mathematics and theoretical physics</p></div></li>
+          <li><span class="award-date">2019–2020</span><div><h3>University Academic Achievement Award</h3><p>Xi’an Jiaotong-Liverpool University</p></div></li>
+        </ul>
+      </section>
+
+      <section class="section-block" id="service" aria-labelledby="service-heading">
+        <div class="section-heading"><h2 id="service-heading"><span class="section-icon" aria-hidden="true">🤝</span>Academic Service</h2></div>
+        <dl class="service-list">
+          <div><dt>Journal reviewer</dt><dd><a href="https://jmlr.org/tmlr/" lang="en">Transactions on Machine Learning Research (TMLR)</a><br><a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing" lang="en">IEEE Transactions on Signal Processing (TSP)</a></dd></div>
+          <div><dt>Conference reviewer</dt><dd lang="en">AAAI · ICML · NeurIPS · ICLR · AISTATS</dd></div>
+        </dl>
+      </section>
+
+      <section class="section-block" id="beyond" aria-labelledby="beyond-heading">
+        <div class="section-heading"><h2 id="beyond-heading"><span class="section-icon" aria-hidden="true">🌍</span>Beyond Research</h2></div>
+        <p class="life-note">I enjoy travelling and getting to know how people live in different places.</p>
       </section>
     </main>
   </div>

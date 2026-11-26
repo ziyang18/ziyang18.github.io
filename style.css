@@ -262,3 +262,38 @@ html:lang(zh) .identity h1, html:lang(zh) .section-heading :is(h2,h3) { letter-s
   .masthead-actions .navigation a { padding-inline: clamp(3px,1.1vw,7px); font-size: 11.5px; }
   .language-switch { padding-inline: 7px; min-height: 29px; font-size: 12px; }
 }
+
+.more-nav { position: relative; }
+.more-nav summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 8px; color: #eef5ff; font-size: 14px; font-weight: 600; }
+.more-nav summary::-webkit-details-marker { display: none; }
+.more-nav summary::after { content: ""; width: 6px; height: 6px; margin-top: -2px; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+.more-nav[open] summary, .more-nav:has(a[aria-current]) summary { background: #ffffff26; color: white; }
+.more-links { position: absolute; right: 0; top: calc(100% + 6px); min-width: 165px; padding: 5px; border: 1px solid #c9d9ed; border-radius: 10px; box-shadow: 0 6px 20px #18385b28; background: white; }
+.navigation .more-links a { display: block; white-space: nowrap; color: var(--navy); font-size: 13px; padding: 8px 10px; }
+.navigation .more-links a:hover, .navigation .more-links a[aria-current] { background: #ebf2fd; color: var(--navy); }
+.more-links a::after { display: none; }
+.education-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.education-list .dual-degree { grid-column: 1/-1; }
+.degree-stages { display: grid; width: 100%; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 10px 0 15px; }
+.degree-stages > div + div { border-inline-start: 1px solid var(--edge); padding-inline-start: 16px; }
+.degree-stages h3 { margin-top: 0; }
+.degree-stages p { margin-bottom: 4px; }
+.stage-date { font-size: 12px; color: #664b2d; }
+#awards .section-icon { background: #fff0d9; }
+#service .section-icon { background: #e9efff; }
+#beyond .section-icon { background: #e5f5ed; }
+.award-list, .service-list { margin: 6px 0 0; }
+.award-list li, .service-list > div { display: grid; grid-template-columns: 120px minmax(0,1fr); align-items: baseline; gap: 12px; padding: 13px 2px; border-bottom: 1px solid var(--line); }
+.award-date { color: #845414; font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.award-list h3 { color: var(--ink); font-size: 16px; line-height: 1.4; }
+.award-list p { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.service-list dt { color: var(--navy); font-size: 14px; font-weight: 650; }
+.service-list dd { margin: 0; font-size: 14px; line-height: 1.75; }
+.life-note { margin-top: 14px; color: var(--body); }
+@media (max-width: 580px) {
+  .more-nav summary { padding: 7px 4px; font-size: 11.5px; }
+  .education-list, .degree-stages { grid-template-columns: 1fr; }
+  .degree-stages { gap: 11px; }
+  .degree-stages > div + div { padding-inline-start: 0; padding-top: 11px; border-inline-start: 0; border-top: 1px solid var(--edge); }
+  .award-list li, .service-list > div { grid-template-columns: 1fr; gap: 2px; }
+}
